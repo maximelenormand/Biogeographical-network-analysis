@@ -4,9 +4,8 @@ Biogeographical network analysis of plant species distribution in the Mediterran
 
 ## Data
 
-The test-value matrix described in [1] is available in the csv file **rho_ij.csv**. The table contains 11 columns file with column names, **the value separator is a semicolon ";"**. Each row represents an plant species.
+The test-value matrix described in [1] is available in the csv file ***rho_ij.csv***. The table contains 11 columns with column names, **the value separator is a semicolon ";"**. Each row represents a plant species.
 
-ID	Name	Test value bioregion 1	Test value bioregion 2	Test value bioregion 3	Test value bioregion 4	Test value bioregion 5	Test value bioregion 6	Test value bioregion 7	Test value bioregion 8	Species cluster
 
 1.  **ID:** SILENE ID of the plant species
 2.  **Name:** Name of the plant species
