@@ -4,7 +4,7 @@ Biogeographical network analysis of plant species distribution in the Mediterran
 
 ## Data
 
-The test-value matrix described in [1] is available in the csv file ***rho_ij.csv***. The table contains 11 columns with column names, **the value separator is a semicolon ";"**. Each row represents a plant species.
+The test-value matrix described in [1] is available in the csv file ***rhoij.csv***. The table contains 11 columns with column names, **the value separator is a semicolon ";"**. Each row represents a plant species.
 
 
 1.  **ID:** SILENE ID of the plant species
@@ -17,9 +17,9 @@ The test-value matrix described in [1] is available in the csv file ***rho_ij.cs
 8.  **Test value bioregion 6:** Contribution of the plant species to cluster "Subatlantic mountains"
 9.  **Test value bioregion 7:** Contribution of the plant species to cluster "Pre-Alps and other medium mountains"
 10. **Test value bioregion 8:** Contribution of the plant species to cluster "High mountains"
-11. **Species cluster:** ID of the plant species cluster the plant species belong to. 
+11. **Species cluster:** ID of the plant species cluster the plant species belongs to. 
 
-[1] Lenormand *et al.* (2018) Biogeographical network analysis of plant species distribution in the Mediterranean region. arXiv preprint arXiv:1609.03375.
+[1] Lenormand *et al.* (2018) Biogeographical network analysis of plant species distribution in the Mediterranean region. arXiv preprint arXiv:.
 
 ## Interactive web application
 
@@ -29,7 +29,7 @@ Work in progress
 
 If you use this code, please cite:
 
-Lenormand *et al.* (2018) Biogeographical network analysis of plant species distribution in the Mediterranean region. arXiv preprint arXiv:1609.03375.
+Lenormand *et al.* (2018) Biogeographical network analysis of plant species distribution in the Mediterranean region. arXiv preprint arXiv:.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
 You can reach me at maxime.lenormand[at]irstea.fr
