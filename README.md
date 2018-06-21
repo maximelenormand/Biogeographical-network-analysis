@@ -17,7 +17,7 @@ The test-value matrix described in [1] is available in the csv file ***rhoij.csv
 8.  **Test value bioregion 6:** Contribution of the plant species to cluster "Subatlantic mountains"
 9.  **Test value bioregion 7:** Contribution of the plant species to cluster "Pre-Alps and other medium mountains"
 10. **Test value bioregion 8:** Contribution of the plant species to cluster "High mountains"
-11. **Species cluster:** ID of the plant species cluster the plant species belongs to. 
+11. **Species group:** ID of the plant species group the plant species belongs to. 
 
 [1] Lenormand *et al.* (2018) Biogeographical network analysis of plant species distribution in the Mediterranean region. arXiv preprint arXiv:1803.05275.
 
