@@ -1,0 +1,157 @@
+.outer {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+#control1 {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+}
+#control1:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+  text-align: justify;
+}
+
+
+
+#txt1 {
+  /* Appearance */
+  margin:-5px;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt2 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt3 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt4 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt5 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt6 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt7 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
+
+#txt8 {
+  /* Appearance */
+  margin:-5px;
+  border-radius: 10px;
+  border-width:7px;
+  border-color:#ff4500;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  text-align: justify;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+}
+
