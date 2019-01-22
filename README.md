@@ -33,7 +33,8 @@ A Shiny application has also been designed by Maxime lenormand and developped by
 
 If you use this code, please cite:
 
-[1] Lenormand *et al.* (2018) [Biogeographical network analysis of plant species distribution in the Mediterranean region.](https://arxiv.org/abs/1803.05275) arXiv preprint arXiv:1803.05275.
+[1] Lenormand *et al.* (2019) [Biogeographical network analysis of plant species distribution in the Mediterranean region.](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4718)
+*Ecology & Evolution* 9, 237-250.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
 You can reach me at maxime.lenormand[at]irstea.fr
