@@ -4,7 +4,7 @@ function(){
 		HTML('
       
       <div style="display:inline;float:right;margin:0px 0px 5px 20px">
-        <img src="Logo.png" border="0" width="300" style="margin:0px">
+        <img src="Logo.png" border="0" width="400" style="margin:0px">
       </div>
 
       <div style="max-width:1000px; word-wrap:break-word;">
@@ -48,8 +48,8 @@ function(){
       <span style="font-size:120%;color:#64645F;font-weight:bold;">Similarity metrics</span>
       <div style="max-width:1000px; word-wrap:break-word;">
         <p style="font-size:120%;text-align:justify;">
-          In this first version of the app, the (dis)similarity of species composition between grid cells has only been measured 
-          with the <a href="https://en.wikipedia.org/wiki/Jaccard_index" target=_blank> Jaccard similarity coefficient</a>.
+          The (dis)similarity of species composition between grid cells has been measured 
+          with the Jaccard and Simpson similarity coefficients.
         </p>
       </div>  
 
@@ -64,7 +64,7 @@ function(){
 		  <div style="max-width:1000px; word-wrap:break-word;">
 		     <p style="text-align:justify;">
 		     
-		     Lenormand <i>et al.</i> (2018) <a href="https://arxiv.org/abs/1803.05275" target=_blank>Biogeographical network analysis of plant species distribution in the Mediterranean region</a> <i>arXiv preprint</i> 1803.05275.
+		     Lenormand <i>et al.</i> (2019) <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4718" target=_blank>Biogeographical network analysis of plant species distribution in the Mediterranean region.</a> <i>Ecology & Evolution</i> 9, 237-250.
 		     
 		     </p>
 		  </div>  

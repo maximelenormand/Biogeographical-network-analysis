@@ -37,7 +37,7 @@ shinyServer(function(input, output, session) {
     # Firt map
                 leaflet() %>%
                 clearTiles() %>%
-                addProviderTiles("OpenStreetMap.BlackAndWhite", options = providerTileOptions(noWrap = TRUE))%>% 
+                addProviderTiles("CartoDB.Positron", options = providerTileOptions(noWrap = TRUE)) %>%
                 fitBounds(1.68822,42.29971,7.736292,45.13382) %>% 
                 addPolygons(layerId=as.character(1:dim(shp1)[1]), data=shp1, weight = 2, smoothFactor = 0.5,
                         color = ~binpal(as.numeric(as.character(shp1@data$richesse))),
@@ -154,7 +154,7 @@ shinyServer(function(input, output, session) {
                 leaflet() %>%
                 clearTiles() %>%
                 clearControls() %>%
-                addProviderTiles("OpenStreetMap.BlackAndWhite", options = providerTileOptions(noWrap = TRUE))%>% 
+                addProviderTiles("CartoDB.Positron", options = providerTileOptions(noWrap = TRUE)) %>% 
                 fitBounds(1.68822,42.29971,7.736292,45.13382) %>%
                 addPolygons(layerId=as.character(1:dim(shp115)[1]), data=shp115,
                         color = c("#FB8072","#FDB462","#A6D854","#66C2A5","#8DA0CB","#E78AC3","#FFD92F","#E5C494"),
@@ -165,8 +165,8 @@ shinyServer(function(input, output, session) {
 
                 addLegend(layerId="leg1",position = 'bottomright', ## choose bottomleft, bottomright, topleft or topright
                         colors = c("#FB8072","#FDB462","#A6D854","#66C2A5","#8DA0CB","#E78AC3","#FFD92F","#E5C494"),
-                        labels = c("Gulf of Lion Coast","Corkoak zone","Mediterranean lowlands","Mediterranean border",
-                           "Cevennes sensu lato","Subatlantic mountains","Prealps and other","High mountains"),  ## legend labels (only min and max)
+                        labels = c("Gulf of Lion coast","Cork oak zone","Mediterranean lowlands","Mediterranean border",
+                           "Cevennes sensu lato","Subatlantic mountains","Pre-Alpes","High mountains"),  ## legend labels (only min and max)
                         opacity = 1,      ##transparency
                         title = "Bioregions")%>%   ## title of the legend
       

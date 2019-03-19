@@ -60,7 +60,7 @@ navbarPage(title = div(
                                 draggable = TRUE, top = 80, left = "auto", right = 20, bottom = "auto",
                                 width = 330, height = "auto",
 
-                                h2("Bioregionalizations"),
+                                h2("Bioregionalization"),
 
                                 selectInput("Method2",
                                         label=strong("Aggregation method"),
@@ -70,8 +70,8 @@ navbarPage(title = div(
                                       
                                 selectInput("Sim_met2",
                                         label=strong("Similarity metric"),
-                                        choices=list("Jaccard" = 1),
-                                                     #"Simpson" = 2),
+                                        choices=list("Jaccard" = 1,
+                                                     "Simpson" = 2),
                                         selected=1),
 
                                 selectInput("cell_size2",
@@ -91,8 +91,8 @@ navbarPage(title = div(
                                                      "Rivas (2004) – biogeo"=7,
                                                      "CEC (2006)"=8),
                                         selected=0),
-                                HTML('<div align="justified">Click to display the ten plants that contribute the most to the bioregion.
-                                       Among the plants that contribute to the bioregion, the sum of the contribution of all the plants is 100% .</div> ')
+                                HTML('<div align="justified">Click to display the ten species that contribute the most to the bioregion.
+                                       Among the species that contribute to the bioregion, the sum of the contribution of all the plants is 100% .</div> ')
                                       
                         )
 
@@ -125,8 +125,8 @@ navbarPage(title = div(
                                       
                         selectInput("Sim_met3",
                                 label=strong("Similarity metric"),
-                                choices=list("Jaccard" = 1),
-                                             #"Simpson" = 2),
+                                choices=list("Jaccard" = 1,
+                                             "Simpson" = 2),
                                 selected=1),
                                       
                                       
