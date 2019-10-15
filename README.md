@@ -27,7 +27,7 @@ The function **biogeonet** (contains in the script **biogeonet.R**) allows the u
 
 ## Interactive web application
 
-A Shiny application has also been designed by Maxime lenormand and developped by Maxence Soubeyrand to visualize the results. This repository contains all the material (R scripts, Rdata and WWW data folder) needed to run the [app](https://maximelenormand.shinyapps.io/Biogeo/). 
+A Shiny application has also been designed by Maxime lenormand and developped by Maxence Soubeyrand to visualize the results. This repository contains all the material (R scripts, Rdata and WWW data folder) needed to run the [app](http://shiny.umr-tetis.fr/Biogeo/). 
 
 ## Citation
 
