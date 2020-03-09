@@ -29,8 +29,13 @@ biogeonet=function(data){
   
   lambda=NULL
   for(k in 1:nclust){    
-    rhoijpk=rhoijp[!is.na(rhoijp[,k]),]  
-    lambda=rbind(lambda, apply(rhoijpk, 2, sum, na.rm =T)/dim(rhoijpk)[1])  
+    rhoijpk=rhoijp[!is.na(rhoijp[,k]),] 
+    if(length(rhoijpk)>nclust){
+        lambda=rbind(lambda, apply(rhoijpk, 2, sum, na.rm =T)/dim(rhoijpk)[1]) 
+    }else{
+        rhoijpk[is.na(rhoijpk)]=0
+        lambda=rbind(lambda, rhoijpk)
+    } 
   }  
   
   # Save results
