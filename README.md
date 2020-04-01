@@ -37,4 +37,4 @@ If you use this code, please cite:
 *Ecology & Evolution* 9, 237-250.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
-You can reach me at maxime.lenormand[at]irstea.fr
+You can reach me at maxime.lenormand[at]inrae.fr
