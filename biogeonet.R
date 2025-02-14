@@ -1,6 +1,6 @@
-## Input: a 3 columns data frame (Species, Cell and Bioregion). Each line gives the presence of a given species in a given cell (and its associated bioregion)
-## Output: the test-value matrix rho and the matrix of bioregion relationships lambda             
-
+# Input: a 3 columns data frame (Species, Cell and Bioregion). Each line gives 
+# the presence of a given species in a given cell (and its associated bioregion).
+# Output: the test-value matrix rho and the matrix of bioregion relationships lambda.             
 biogeonet=function(data){
     
   # Number of cells per bioregions

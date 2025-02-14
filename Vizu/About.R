@@ -4,7 +4,7 @@ function(){
 		HTML('
       
       <div style="display:inline;float:right;margin:0px 0px 5px 20px">
-        <img src="Logo.png" border="0" width="400" style="margin:0px">
+        <img src="Logos.png" border="0" width="400" style="margin:0px">
       </div>
 
       <div style="max-width:1000px; word-wrap:break-word;">
@@ -53,13 +53,8 @@ function(){
         </p>
       </div>  
 
-
-
-
-      <hr width="1000", align="left" style="height:0.5px;border:none;color:#A0A5A8;background-color:#A0A5A8;" />
+      <hr width="1000" align="left" style="height:0.5px;border:none;color:#A0A5A8;background-color:#A0A5A8;" />
   
-		  
-
       <span style="color:#64645F;font-weight:bold;">Reference</span>
 		  <div style="max-width:1000px; word-wrap:break-word;">
 		     <p style="text-align:justify;">
@@ -72,14 +67,14 @@ function(){
 		  <span style="color:#64645F;font-weight: bold;">Author</span>
 		  <div style="max-width:1000px; word-wrap:break-word;">
 		     <p style="text-align:justify">
-		        Maxence Soubeyrand & <a href="http://www.maximelenormand.com" target=_blank>Maxime Lenormand</a>
+		        Maxence Soubeyrand & <a href="https://www.maximelenormand.com" target=_blank>Maxime Lenormand</a>
 		     </p>
 		  </div>  
 
 		  <span style="color:#64645F;font-weight:bold;">Code</span>
 		  <div style="max-width:1000px; word-wrap:break-word;">
 		     <p style="text-align:justify;">
-		        Source code available <a href=" http://www.maximelenormand.com/Codes" target=_blank>here</a>
+		        Source code available <a href="https://gitlab.com/maximelenormand/Biogeographical-network-analysis" target=_blank>here</a>
 		     </p>
 		  </div> 
 
@@ -89,6 +84,13 @@ function(){
 		        Coded under License GPLv3
 		     </p>
 		  </div> 
+		
+		 <hr>
+		
+		  <span style="font-size:12px;">Powered by <a href="https://sk8.inrae.fr" target="_blank">SK8</a> since 2021 - </span>
+      <a href="https://sk8.inrae.fr" target="_blank">
+          <img style="vertical-align:middle;height:25px;" src="SK8.png"/>
+      </a>
 
 		'),
 		

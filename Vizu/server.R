@@ -1,7 +1,4 @@
 # Import libraries
-library(shiny)
-library(leaflet)
-library(rgdal)
 library(fmsb)
 library(scales)
 library(png)
@@ -44,8 +41,7 @@ shinyServer(function(input, output, session) {
                         fillColor=~binpal(as.numeric(as.character(shp1@data$richesse))),
                         opacity = 0.7, fillOpacity = 0.7, popup=popup, highlightOptions = highlightOptions(color = "white",
                                                                                                    weight = 2,bringToFront = TRUE),stroke=F)%>%
-                addLegend(pal = binpal, values = as.numeric(as.character(shp1$richesse)), opacity = 0.7, title = "#species",position = "bottomright")%>%
-                addScaleBar(position="bottomleft")
+                addLegend(pal = binpal, values = as.numeric(as.character(shp1$richesse)), opacity = 0.7, title = "#species",position = "bottomright")
         })
         observe({ #map according the input 
                 shpi=shpi()
@@ -64,8 +60,8 @@ shinyServer(function(input, output, session) {
                         fillColor=~binpal(as.numeric(as.character(shpi@data$richesse))),
                         opacity = 0.7, fillOpacity = 0.7, popup=popup, highlightOptions = highlightOptions(color = "white",
                         weight = 2,bringToFront = TRUE),stroke=F)%>%
-                addLegend(pal = binpal, values = as.numeric(as.character(shpi$richesse)), opacity = 0.7, title = "#species",position = "bottomright")%>%
-                addScaleBar(position="bottomleft")
+                addLegend(pal = binpal, values = as.numeric(as.character(shpi$richesse)), opacity = 0.7, title = "#species",position = "bottomright")
+                
         })
   
 #####Bioregions############################################################################################
@@ -168,9 +164,7 @@ shinyServer(function(input, output, session) {
                         labels = c("Gulf of Lion coast","Cork oak zone","Mediterranean lowlands","Mediterranean border",
                            "Cevennes sensu lato","Subatlantic mountains","Pre-Alpes","High mountains"),  ## legend labels (only min and max)
                         opacity = 1,      ##transparency
-                        title = "Bioregions")%>%   ## title of the legend
-      
-                addScaleBar(position="bottomleft")
+                        title = "Bioregions")
         })
   
         observe({
@@ -212,9 +206,7 @@ shinyServer(function(input, output, session) {
                                 colors = color2[!is.na(color2)],
                                 labels = legend2[!is.na(legend2)],  
                                 opacity = 1,      ##transparency
-                                title = "Bioregions")%>%   ## title of the legend
-        
-                        addScaleBar(position="bottomleft")  
+                                title = "Bioregions")
         
         
                 }else{ #If there are bioregion line 
@@ -237,9 +229,7 @@ shinyServer(function(input, output, session) {
                                opacity = 1,      ##transparency
                                 title = "Bioregions")%>%   ## title of the legend
       
-                        addPolylines(layerId=as.character(12), data=line,color="#ff4500",opacity=1,options = popupOptions())%>%   
-        
-                        addScaleBar(position="bottomleft")
+                        addPolylines(layerId=as.character(12), data=line,color="#ff4500",opacity=1,options = popupOptions())
                 }   
         })
   

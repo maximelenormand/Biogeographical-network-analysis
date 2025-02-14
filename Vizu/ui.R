@@ -1,30 +1,22 @@
 # Import libraries
-library(shiny)
-library(leaflet)
 library(shinythemes)
 library(shinyjs)
 
-
 tabPanelAbout=source("About.R")$value
-
 
 # UI
 navbarPage(title = div(
-                HTML('<span style="font-size:120%;color:white;font-weight:bold;"> Plant species distribution in the Mediterranean region&nbsp;&nbsp;</span></a>'),
-#add the french flag with the link for a french version on this app  
-                tags$script(HTML("var header = $('.navbar > .container-fluid');
-                header.append('<div style=\"float:right\"><a href=\"https://maximelenormand.shinyapps.io/Biogeo_FR/\"><img src=\"french_flag.png\" alt=\"alt\" style=\"float:right; width:50px;height:40px;padding-top:10px;\"> </a></div>');console.log(header)"))
-                ),
-        theme = shinytheme("united"),
-        windowTitle = "Bioregion",
-        header = "",
+                HTML('<span style="font-size:120%;color:white;font-weight:bold;"> Plant species distribution in the Mediterranean region&nbsp;&nbsp;</span></a>'),                ),
+           theme = shinytheme("united"),
+           windowTitle = "BiogeoMed",
+           header = "",
 #######################################Data#######################################
         tabPanel(strong("Data"),
                 div(class="outer",  
                # Include custom CSS  
                         tags$head(
                                 includeCSS("styles.css"),
-                                tags$link(rel = "icon", type = "image/png", href = "Logo_bioregion.png") #icon for the web page
+                                tags$link(rel = "icon", type = "image/png", href = "Icon_BiogeoMed.png") #icon for the web page
                         ),
                # Map
                       leafletOutput("map", width = "100%", height = "100%"),
@@ -45,9 +37,15 @@ navbarPage(title = div(
                              #details and source on the panel
                               HTML('<div align="justified">Click to display the number of species in the cell.</div>  <br/>'),
                               HTML('<div align="justified"><strong>Source</strong></div> '),
-                              HTML('<div align="justified">Conservatoire Botanique National Méditerranéen & Conservatoire Botanique National Alpin (<a href="http://flore.silene.eu" target=_blank>http://flore.silene.eu</a>).</div> ')
+                              HTML('<div align="justified">Conservatoire Botanique National Méditerranéen & Conservatoire Botanique National Alpin (<a href="https://silene.eu/" target=_blank>https://silene.eu/</a>).</div> ')
                         )
-                )
+                ),
+               
+              # SK8 footer
+               div(
+                 class="footer",
+                 includeHTML("footer.html")
+              )
         ),
 #######################################Bioregions#######################################
         tabPanel(strong("Bioregions"),
@@ -64,7 +62,7 @@ navbarPage(title = div(
 
                                 selectInput("Method2",
                                         label=strong("Aggregation method"),
-                                        choices=list("Oslom" = 1,
+                                        choices=list("OSLOM" = 1,
                                                      "Ward" = 2),
                                         selected=1),
                                       
@@ -98,7 +96,13 @@ navbarPage(title = div(
 
                 ),
                     #for the panel of bioregion line
-                tags$div(id = 'placeholder') 
+                tags$div(id = 'placeholder'),
+                
+                # SK8 footer
+                div(
+                  class="footer",
+                  includeHTML("footer.html")
+                ) 
         ),
            
            
@@ -119,7 +123,7 @@ navbarPage(title = div(
                                       
                         selectInput("Method3",
                                 label=strong("Aggregation method"),
-                                choices=list("Oslom" = 1,
+                                choices=list("OSLOM" = 1,
                                              "Ward" = 2),
                                 selected=1),
                                       
@@ -138,7 +142,13 @@ navbarPage(title = div(
                         p(strong("Network of interactions between bioregions")),
                         HTML('For a given bioregion, the values (expressed here in percentage) show how the contribution of species that contribute 
                                         significantly to this bioregion is distributed across bioregions (including itself). Only links with values higher than 10% are shown. 
-                                        More details available in <a href="https://arxiv.org/abs/1803.05275" target=_blank>the paper</a>.')
+                                        More details available in <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4718" target=_blank>the paper</a>.')
+                ),
+                
+                # SK8 footer
+                div(
+                  class="footer",
+                  includeHTML("footer.html")
                 )
      
         ),
