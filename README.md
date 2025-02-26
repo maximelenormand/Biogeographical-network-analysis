@@ -51,9 +51,9 @@ the material (R scripts, Rdata and www data folder) needed to run
 - [Maxime Lenormand](https://www.maximelenormand.com/)
 - [Maxence Soubeyrand](https://scholar.google.com/citations?user=tAPNCJQAAAAJ&hl=en)
 
-## Citation
+## Reference and citation
 
-If you use this code, please cite:
+If you use this code, please cite the following reference:
 
 [1] Lenormand *et al.* (2019) [Biogeographical network analysis of plant species distribution in the Mediterranean region.](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4718)
 *Ecology & Evolution* 9, 237-250.
